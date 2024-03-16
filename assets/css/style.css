@@ -1,12 +1,13 @@
-/* ! Reset */
 :root {
     /* --background : #1A5491; */
-    --background: #172639;
+    --background: #0d161f;
     --font-color: #8CBBEC;
     --p-color: #fff;
     --glow-color: #8CBBEC;
 }
-
+/* -------------------------------------------------------------------------------- */
+/* ! Reset */
+/* -------------------------------------------------------------------------------- */
 body, html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
@@ -91,10 +92,13 @@ nav li a::after {
     left: 0;
     background-color: var(--font-color);
     transform-origin: bottom right;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 nav li a:hover::after {
+    -webkit-box-shadow: 0 0 20px 0 #8CBBEC;
+    box-shadow: 0 0 20px 0 #8CBBEC;
+
     color: var(--font-color);
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -198,16 +202,14 @@ nav li a:hover {
 
     margin: 0 10px;
 
-    -webkit-box-shadow: 5px 0 15px 0 #8CBBEC;
-    box-shadow: 5px 0 15px 0 #8CBBEC;
+    -webkit-box-shadow: 0 0 15px 0 #8CBBEC;
+    box-shadow: 0 0 15px 0 #8CBBEC;
     border-color: var(--font-color);
-}
+ }
+
 .about li a, ion-icon{
     color: #ffffff;
     transition: ease-in 600ms cubic-bezier(.215, .61, .355, 1);
-}
-.about li a:hover, ion-icon:hover {
-    color: var(--font-color);
 }
 
 /* -------------------------------------------------------------------------------- */
